@@ -5,27 +5,26 @@
   "name": "${name}",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "tanetakumi"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "CC0-1.0",
-  "icon": "assets/template/icon.png",
+  "icon": "assets/hanemod/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.TemplateMod"
+      "net.serveron.hane.HaneMod"
     ],
-    "client": [
-      "com.example.TemplateModClient"
-    ]
+    "server": [],
+    "client": []
   },
   "mixins": [
-    "template.mixins.json",
+    "hanemod.mixins.json",
     {
-      "config": "template.client.mixins.json",
+      "config": "hanemod.client.mixins.json",
       "environment": "client"
     }
   ],
