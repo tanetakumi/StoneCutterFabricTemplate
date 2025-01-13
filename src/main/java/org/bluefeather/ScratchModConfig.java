@@ -88,10 +88,12 @@ public class ScratchModConfig {
 
         String test1;
         boolean test2;
+        InvShare invShare;
 
-        public Configuration(String test1, boolean test2) {
+        public Configuration(String test1, boolean test2, InvShare invShare) {
             this.test1 = test1;
             this.test2 = test2;
+            this.invShare = invShare;
         }
     }
 
