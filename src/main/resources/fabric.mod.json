@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "Integration of minecraft and scratch",
+  "authors": [
+    "tanetakumi",
+    "aoi-san"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/scratchmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.bluefeather.ScratchMod"
+    ],
+    "server": [],
+    "client": []
+  },
+  "mixins": [
+    "scratchmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15",
+    "minecraft": "${mcdep}",
+    "fabric-api": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "craftershub": "https://discord.gg/tjayanzYMf"
+      }
+    }
+  }
+}
